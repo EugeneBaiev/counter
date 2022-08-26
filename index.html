@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="content__inner">
+      <div class="couter-form">
+        <div class="couter-form__control">
+          <div class="btn btn_success btn_round btn_round_save-storage couter-form__save-storage js-save-storage"></div>
+          <div class="btn btn_warning btn_round btn_round_load-storage couter-form__load-storage js-load-storage"></div>
+          <div class="btn btn_success btn_round btn_round_save couter-form__save js-save"></div>
+          <label class="btn btn_warning btn_round btn_round_load couter-form__load">
+            <input type="file" class="js-load-input" accept=".json">
+          </label>
+        </div>
+        <div class="couter-form__control">
+          <div class="btn couter-form__add js-add">
+            Додати
+          </div>
+          <label class="checkbox couter-form__edit">
+            <input type="checkbox" class="checkbox__input js-edit">
+            <span class="checkbox__checkmark"></span>
+            Редагувати
+          </label>
+          <div class="btn btn_danger couter-form__reset-all js-reset-all">
+            Скинути всі
+          </div>
+        </div>
+        <div class="couter-form__list">
+          <div class="couter-form__row couter-form__row_active">
+            <div class="btn btn_danger btn_round btn_round_remove couter-form__remove js-remove"></div>
+            <div class="couter-form__name">
+              <input type="text" class="input-style name-input">
+            </div>
+            <div class="counter couter-form__counter">
+              <input type="text" class="input-style counter__input" value="0" readonly>
+              <div class="btn btn_round btn_success btn_round_inc counter__inc"></div>
+              <div class="btn btn_round btn_danger btn_round_dec counter__dec"></div>
+              <div class="btn btn_round btn_warning btn_round_reset counter__reset"></div>
+            </div>
+          </div>
+          <div class="couter-form__row couter-form__row_hidden">
+            <div class="btn btn_danger btn_round btn_round_remove couter-form__remove js-remove"></div>
+            <div class="couter-form__name">
+              <input type="text" class="input-style name-input">
+            </div>
+            <div class="counter couter-form__counter">
+              <input type="text" class="input-style counter__input" value="0" readonly>
+              <div class="btn btn_round btn_success btn_round_inc counter__inc"></div>
+              <div class="btn btn_round btn_danger btn_round_dec counter__dec"></div>
+              <div class="btn btn_round btn_warning btn_round_reset counter__reset"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
